@@ -1,1 +1,143 @@
+/* TUATRAVEL - Custom Styling */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Montserrat:wght@600;700;800&display=swap');
+
+:root {
+  --tua-cyan: #12A8C7;
+  --tua-navy: #075B78;
+  --tua-deep: #032B3A;
+  --tua-orange: #FF6B35;
+  --tua-gold: #F59E0B;
+  --tua-bg: #F4FAFC;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: 'Montserrat', 'Be Vietnam Pro', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #12A8C7;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #075B78;
+}
+
+/* Glassmorphism Navigation */
+.nav-glass {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(18, 168, 199, 0.12);
+  transition: all 0.3s ease;
+}
+
+.nav-glass.scrolled {
+  box-shadow: 0 10px 30px -10px rgba(7, 91, 120, 0.15);
+}
+
+/* Hero Background Gradient Overlay */
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(3, 43, 58, 0.65) 0%, rgba(7, 91, 120, 0.75) 50%, rgba(3, 43, 58, 0.90) 100%);
+}
+
+/* Card Hover Elevation */
+.travel-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.travel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px -10px rgba(18, 168, 199, 0.22);
+}
+
+/* Pulse animation for CTA buttons */
+@keyframes soft-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.6);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 12px rgba(255, 107, 53, 0);
+  }
+}
+.pulse-cta {
+  animation: soft-pulse 2.8s infinite;
+}
+
+/* Countdown Box */
+.timer-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Modal styles */
+.modal-backdrop {
+  background-color: rgba(3, 43, 58, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+/* Badges */
+.badge-scarcity {
+  background: linear-gradient(90deg, #FF6B35 0%, #F59E0B 100%);
+}
+
+/* Quick Floating Contact Buttons */
+.fab-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fab-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.fab-btn:hover {
+  transform: scale(1.1);
+}
+
+.fab-btn .fab-tooltip {
+  visibility: hidden;
+  position: absolute;
+  right: 56px;
+  white-space: nowrap;
+  background-color: #075B78;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.fab-btn:hover .fab-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
