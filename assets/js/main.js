@@ -104,7 +104,7 @@ const TOURS_DATA = [
     regionName: "Miền Bắc",
     duration: "3 Ngày 2 Đêm",
     badge: "Hùng quan cực Bắc",
-    image: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+    image:"assets/images/dulichhagiang-3060.jpg",
     description: "Vượt 'Đệ nhất hùng quan' đèo Mã Pí Lèng, lênh đênh sông Nho Quế xanh ngọc bích hẻm Tu Sản và chạm tay vào Cột cờ Lũng Cú linh thiêng.",
     price: "3.290.000 đ",
     priceNote: "[Giá tham khảo - Vui lòng liên hệ cập nhật ưu đãi]",
